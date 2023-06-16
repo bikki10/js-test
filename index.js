@@ -58,7 +58,32 @@
 
 // Learning about ternerary operators
 
-let x =12;
-let result = x === 12 ? "x is correct!" : "x is incorrect!";
-alert(result);
+// let x =12;
+// let result = x === 12 ? "x is correct!" : "x is incorrect!";
+// alert(result);
 
+
+//-------------------------Functions-------------------------------//
+
+// Uses keyword "function"
+
+// Syntax :
+//                  function function_name(arg_1, arg_2,...)
+
+//This is the traditional way
+
+function area(a,b){
+    console.log(a*b);
+}
+area(1,2);
+area(70,29);
+area(13,27);
+
+
+// Latest ES6 style to write functions
+
+const add = (a,b) => {
+    console.log(a+b);
+}
+
+add(7,3);
