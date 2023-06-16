@@ -4,5 +4,14 @@
 // let b = 123;
 // console.log(b);
 
-var c = "abc";
-console.log(c);
+// var c = "abc";
+// console.log(c);
+
+const greet = alert("Hello mate!");
+console.log(greet);
+
+const age = prompt("How old are you?");
+console.log(age);
+
+let sure = confirm("Are you sure?");
+console.log(sure);
