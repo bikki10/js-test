@@ -37,21 +37,28 @@
 // }
 
 
-let x = 18;
-let y = 80;
+// let x = 18;
+// let y = 80;
 
-var age= parseInt(prompt("How old are you?"));
+// var age= parseInt(prompt("How old are you?"));
 
-if(age<18 || age>80){
-    console.log("You are not eligible to vote");
-}
+// if(age<18 || age>80){
+//     console.log("You are not eligible to vote");
+// }
 
-else if(age>=18 && age<=80){
-    console.log("Hello there citizen! You are eligible to vote!");
-}
+// else if(age>=18 && age<=80){
+//     console.log("Hello there citizen! You are eligible to vote!");
+// }
 
-else{
-    console.log("We are a huge traffic right now!\n Please try later!");
-}
+// else{
+//     console.log("We are a huge traffic right now!\n Please try later!");
+// }
 
+
+
+// Learning about ternerary operators
+
+let x =12;
+let result = x === 12 ? "x is correct!" : "x is incorrect!";
+alert(result);
 
