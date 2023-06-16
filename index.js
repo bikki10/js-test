@@ -72,18 +72,18 @@
 
 //This is the traditional way
 
-function area(a,b){
-    console.log(a*b);
-}
-area(1,2);
-area(70,29);
-area(13,27);
+// function area(a,b){
+//     console.log(a*b);
+// }
+// area(1,2);
+// area(70,29);
+// area(13,27);
 
 
-// Latest ES6 style to write functions
+// // Latest ES6 style to write functions
 
-const add = (a,b) => {
-    console.log(a+b);
-}
+// const add = (a,b) => {
+//     console.log(a+b);
+// }
 
-add(7,3);
+// add(7,3);
