@@ -91,15 +91,25 @@
 
 // Objects
 
-const person ={
-    firstName : "Bikram",
-    lastName: "Bhusal",
-    fullName: () => {
-        return `${person.firstName} ${person.lastName}`;
+// const person ={
+//     firstName : "Bikram",
+//     lastName: "Bhusal",
+//     fullName: () => {
+//         return `${person.firstName} ${person.lastName}`;
+//     },
+// };
+
+// const c = person.firstName;
+// const a = person.fullName();
+// console.log(c,a);
+
+const school = {
+    principal: "John Smith",
+    vicePrincipal: "Aero Walker",
+    members:()=>{
+        return `${school.principal} ${school.vicePrincipal}`;
     },
 };
 
-const c = person.firstName;
-const a = person.fullName();
-console.log(c,a);
-
+const a = school.members();
+console.log(a);
