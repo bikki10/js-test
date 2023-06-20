@@ -103,13 +103,29 @@
 // const a = person.fullName();
 // console.log(c,a);
 
-const school = {
-    principal: "John Smith",
-    vicePrincipal: "Aero Walker",
-    members:()=>{
-        return `${school.principal} ${school.vicePrincipal}`;
-    },
-};
+// const school = {
+//     principal: "John Smith",
+//     vicePrincipal: "Aero Walker",
+//     members:()=>{
+//         return `${school.principal} ${school.vicePrincipal}`;
+//     },
+// };
 
-const a = school.members();
-console.log(a);
+// const a = school.members();
+// console.log(a);
+
+// Arrays
+
+const arr = ["FZ-S","MT-15", "CBR",{name:"SZR"}];
+// access the first item
+const b = arr[0];
+console.log(b);
+// access the last time
+const e = arr[arr.length-1];
+console.log(e);
+
+console.log(arr.length);
+console.log(arr.sort());
+console.log(arr.push("Pulsar"));
+console.log(arr.pop());
+
