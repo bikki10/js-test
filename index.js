@@ -133,17 +133,23 @@
 
 // User Model
 
-const user = {
-    firstName: "John",
-    lastName: "Doe",
-    email:"john@john.com",
-    phone:"1234567890",
-    password:"23456asd"
-};
+// const user = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     email:"john@john.com",
+//     phone:"1234567890",
+//     password:"23456asd"
+// };
 
 // User list
 
-const {password,phone,...rest} = user;
+//for objects
+
+// const {password,phone, ...rest} = user;      // ... this is a spread operator
+// console.log({rest});
+
+// for arrays
+
+const example=["Bikki","Sandip","Mern","Money","Hello"];
+const [first,sec, ...rest] = example;
 console.log({rest});
-
-
