@@ -116,16 +116,34 @@
 
 // Arrays
 
-const arr = ["FZ-S","MT-15", "CBR",{name:"SZR"}];
-// access the first item
-const b = arr[0];
-console.log(b);
-// access the last time
-const e = arr[arr.length-1];
-console.log(e);
+// const arr = ["FZ-S","MT-15", "CBR",{name:"SZR"}];
+// // access the first item
+// const b = arr[0];
+// console.log(b);
+// // access the last time
+// const e = arr[arr.length-1];
+// console.log(e);
 
-console.log(arr.length);
-console.log(arr.sort());
-console.log(arr.push("Pulsar"));
-console.log(arr.pop());
+// console.log(arr.length);
+// console.log(arr.sort());
+// console.log(arr.push("Pulsar"));
+// console.log(arr.pop());
+
+// We use immitable JS to create a copy of given data to perform test.
+
+// User Model
+
+const user = {
+    firstName: "John",
+    lastName: "Doe",
+    email:"john@john.com",
+    phone:"1234567890",
+    password:"23456asd"
+};
+
+// User list
+
+const {password,phone,...rest} = user;
+console.log({rest});
+
 
