@@ -150,6 +150,14 @@
 
 // for arrays
 
-const example=["Bikki","Sandip","Mern","Money","Hello"];
-const [first,sec, ...rest] = example;
-console.log({rest});
+// const example=["Bikki","Sandip","Mern","Money","Hello"];
+// const [first,sec, ...rest] = example;
+// // console.log({rest});
+
+// const myFunction = (data)=>{
+//     return data.toUpperCase();
+// };
+
+// const newUpperCase = example.map(myFunction).toUpperCase();
+// console.log({newUpperCase});
+
