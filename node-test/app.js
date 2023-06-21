@@ -1,8 +1,10 @@
-const http = require('http');
+//app.js
 
-http.createServer((req,res) => {
-    res.writeHead(200,{'Content-Type':'text/html'});
-    res.end('Hello world!');
+const http = require("http");
+const currentDateTime = require("./myFirstModule");
+
+http.createServer((request, respond) => {
+    respond.end("Hello world! " + currentDateTime.myDateTime());
 }).listen(8080);
 
 console.log('App running on port 8080');

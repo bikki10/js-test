@@ -1,4 +1,3 @@
-const myDateTime = () =>{
+exports.myDateTime = () =>{
     return Date();
 };
-console.log(myDateTime());
