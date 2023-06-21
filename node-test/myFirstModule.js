@@ -1,4 +1,4 @@
-export const myDateTime = () =>{
+const myDateTime = () =>{
     return Date();
 };
-console.log(myDateTime())
+console.log(myDateTime());
