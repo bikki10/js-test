@@ -28,14 +28,9 @@ const transporter = nodemailer.createTransport({
 
 // transporter.on()
 
-const mailer = (mailOptions, transporter) => {
-    transporter.sendMail(mailOptions, (err, info) => {
-        if(err){
-            console.log(err);
-        } else {
-            console.log(info);
-        }
-    });
+const mailer = async (mailOptions, transporter) => {
+    const info = await transporter.sendMail(mailOptions);
+    console.log({info: info.response});
 };
 
-mailer(mailOptions, transporter);
+mailer(mailOptions, transporter).catch(console.error);
