@@ -32,6 +32,11 @@ const fetchWeatherData = async() =>{
     }
 };
 
+async function getWeather(){
+    const data = await fetchWeatherData();
+    console.log(data);
+}
+
 // 3. Write a node.js application to convert the currency from one currency to another using package: current-converter-lt
 
 // const CC = require('currency-converter-lt')
