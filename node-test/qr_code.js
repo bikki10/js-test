@@ -14,30 +14,30 @@
 
 // 2. Weather
 
-const axios = require("axios");
+// const axios = require("axios");
 
-const fetchWeatherData = async() =>{
-    try{
-        const response = await axios(
-            "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m"
-        );
-        console.log({response});
-        // console.log({response});
+// const fetchWeatherData = async() =>{
+//     try{
+//         const response = await axios(
+//             "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m"
+//         );
+//         console.log({response});
+//         // console.log({response});
         
 
-        //Extract the relevant weather data from the response
+//         //Extract the relevant weather data from the response
 
-        const{latitude,longitude,...rest}=response.data;
-        return{rest};
-    } catch (error){
-        throw new Error("Failed to fetch weather data.");
-    }
-};
+//         const{latitude,longitude,...rest}=response.data;
+//         return{rest};
+//     } catch (error){
+//         throw new Error("Failed to fetch weather data.");
+//     }
+// };
 
-async function getWeather(){
-    const data = await fetchWeatherData();
-    console.log(data);
-}
+// async function getWeather(){
+//     const data = await fetchWeatherData();
+//     console.log(data);
+// }
 
 // 3. Write a node.js application to convert the currency from one currency to another using package: current-converter-lt
 
